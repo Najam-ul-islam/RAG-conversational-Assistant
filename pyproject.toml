@@ -1,0 +1,28 @@
+[project]
+name = "rag-langchain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Najam Ul Islam", email = "26120402+Najam-ul-islam@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.0.20",
+    "faiss-cpu>=1.12.0",
+    "langchain-chroma>=0.2.5",
+    "langchain-community>=0.3.27",
+    "langchain-google-genai>=2.1.9",
+    "langchain-ollama>=0.3.6",
+    "langchain[google-genai]>=0.3.27",
+    "langgraph>=0.6.6",
+    "onnxruntime==1.22.1",
+    "pypdf>=6.0.0",
+]
+
+[project.scripts]
+rag-langchain = "rag_langchain:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
