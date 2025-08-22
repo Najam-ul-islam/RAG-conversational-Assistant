@@ -43,6 +43,12 @@ python -m venv venv
 source venv/bin/activate   # Linux / macOS
 venv\Scripts\activate      # Windows
 ```
+### 2(a). Create a virtual environment with UV package manager
+```bash
+uv sync
+
+uv sync will dynamically install all the dependencies for this project.
+```
 
 ### 3. Install dependencies
 ```bash
